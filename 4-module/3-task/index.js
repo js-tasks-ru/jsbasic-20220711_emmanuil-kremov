@@ -39,3 +39,29 @@ function highlight(table) {
     });
   }
 }
+
+
+
+  // Мой код, тесты не проходят: 
+
+  // for(let td of table.querySelectorAll('td')) {
+
+  //   if(td.hasAttribute('data-available') && td.getAttribute('data-available') == 'true') {
+  //     td.classList.add('available');
+  //   } else if(td.hasAttribute('data-available') && td.getAttribute('data-available') == 'false') {
+  //     td.classList.add('unavailable');
+  //   } else {
+  //     td.hidden = true;
+  //   }
+
+  //   if(td.textContent == 'm') {
+  //     td.classList.add('male');
+  //   } else if(td.textContent == 'f') {
+  //     td.classList.add('female');
+  //   }
+
+  //   if(parseInt(td.textContent) < 18) {
+  //     td.style.textDecoration = 'line-through';
+  //   }
+
+  // }
