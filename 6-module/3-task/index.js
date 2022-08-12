@@ -1,7 +1,6 @@
 import createElement from '../../assets/lib/create-element.js';
 
 export default class Carousel {
-
   slides = [];
   elem = null; 
 
@@ -18,25 +17,19 @@ export default class Carousel {
     let slidesBlock = '';
 
     for(let obj of this.slides){
-      slidesBlock += this.slidesTemplate(obj.name, obj.price.toFixed(2), obj.image, obj.id);
+      slidesBlock += `
+      <div class="carousel__slide" data-id="${obj.id}">
+        <img src="/assets/images/carousel/${obj.image}" class="carousel__img" alt="slide">
+        <div class="carousel__caption">
+          <span class="carousel__price">€${obj.price}</span>
+          <div class="carousel__title">${obj.name}</div>
+          <button type="button" class="carousel__button">
+            <img src="/assets/images/icons/plus-icon.svg" alt="icon">
+          </button>
+        </div>
+      </div>`
     }
-
     return slidesBlock;
-  }
-
-  slidesTemplate(name, price, image, id) {
-    return `
-        <div class="carousel__slide" data-id="${id}">
-          <img src="/assets/images/carousel/${image}" class="carousel__img" alt="slide">
-          <div class="carousel__caption">
-            <span class="carousel__price">€${price}</span>
-            <div class="carousel__title">${name}</div>
-            <button type="button" class="carousel__button">
-              <img src="/assets/images/icons/plus-icon.svg" alt="icon">
-            </button>
-          </div>
-        </div>  
-    `;
   }
 
   mainCaruselTemplate() {
