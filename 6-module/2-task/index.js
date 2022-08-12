@@ -4,7 +4,7 @@ export default class ProductCard {
   product = {};
   elem = null; 
   
-  constructor(product){
+  constructor(product) {
     this.product = product;
     this.tamplate()
   }
