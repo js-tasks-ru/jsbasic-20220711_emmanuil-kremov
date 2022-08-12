@@ -21,7 +21,7 @@ export default class Carousel {
       <div class="carousel__slide" data-id="${obj.id}">
         <img src="/assets/images/carousel/${obj.image}" class="carousel__img" alt="slide">
         <div class="carousel__caption">
-          <span class="carousel__price">€${obj.price}</span>
+          <span class="carousel__price">€${obj.price.toFixed(2)}</span>
           <div class="carousel__title">${obj.name}</div>
           <button type="button" class="carousel__button">
             <img src="/assets/images/icons/plus-icon.svg" alt="icon">
