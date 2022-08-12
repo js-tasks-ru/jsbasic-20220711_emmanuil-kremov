@@ -3,4 +3,6 @@ function factorial(n) {
   while(n){
       result *= n--;
   }
-  return result;}
+  
+  return result;
+  }
