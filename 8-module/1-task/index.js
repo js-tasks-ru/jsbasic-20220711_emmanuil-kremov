@@ -74,39 +74,3 @@ export default class CartIcon {
   }
 }
 
-
-
-// let initialTopCoord = this.elem.getBoundingClientRect().top + window.pageYOffset;
-
-// if(!this.isHidden(this.elem)) {
-//   if (window.pageYOffset > initialTopCoord) {
-//     let leftIndent = Math.min(
-//       document.querySelector('.container').getBoundingClientRect().right + 20,
-//       document.documentElement.clientWidth - this.elem.offsetWidth - 10
-//     ) + 'px'
-    
-//     Object.assign(this.elem.style, {
-//       position: 'fixed',
-//       top: '50px',
-//       zIndex: 1e3,
-//       right: '10px',
-//       left: leftIndent
-//     });
-
-//   } else {
-
-
-//   }
-
-//   let isMobile = document.documentElement.clientWidth <= 767;
-
-//   if (document.documentElement.clientWidth <= 767) {
-//     Object.assign(this.elem.style, {
-//       position: '',
-//       top: '',
-//       left: '',
-//       zIndex: ''
-//     });
-//   }
-  
-// }
